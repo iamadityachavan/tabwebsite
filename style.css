@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box
+}
+
+/* Set height of body and the document to 100% */
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #e8edf1;
+    font-family: ProximaNova;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    color: #242424;
+    position: relative;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 20%;
+}
+
+#defaultOpen {
+    background-color: #cccccc;
+}
+
+#defaultOpen:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(232, 237, 241, 0);
+    border-top-color: #cccccc;
+    border-width: 16px;
+    margin-left: -16px;
+}
+
+.tablink:hover {
+    color: #000fff;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: #242424;
+    display: none;
+    padding: 100px 20px;
+    background-color: rgba(232, 237, 241, 0.4);
+}
+
+.paraContent1 {
+    font-family: ProximaNova;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: -0.3px;
+    color: #242424;
+    margin-top: 0px;
+}
+
+.paraContent2 {
+    font-family: NeuzeitGro-Lig;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69;
+    letter-spacing: normal;
+    color: #242424;
+}
+
+.btnConsultation {
+    width: 212px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #000fff;
+    font-family: ProximaNova;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    border-width: 0px;
+}
+
+@-webkit-keyframes MOVE-BG {
+    from {
+        -webkit-transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(46px);
+    }
+}
+
+@keyframes MOVE-BG {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(46px);
+    }
+}
+
+
+.btnDiv {
+    position: absolute;
+    left: -46px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: repeating-linear-gradient(45deg, #00ddff 10%, rgba(0, 221, 255, 0.04) 10%, rgba(0, 221, 255, 0.04) 50%, #00ddff 50%, #00ddff 60%, rgba(0, 221, 255, 0.04) 60%, rgba(0, 221, 255, 0.04) 100%);
+    background-size: 35.36px 35.36px;
+
+    -webkit-animation-name: MOVE-BG;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    animation-name: MOVE-BG;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.btnContent {
+    position: relative;
+}
+
+.tabContents {
+    width: 40%;
+    display: inline-grid;
+}
+
+.imgContent {
+    width: 55%;
+    float: right;
+    display: inline-grid;
+}
+
+.desktopImg {
+    width: 100%;
+}
